@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div className="relative">
-      <div className="sticky top-0 left-0 w-full px-6 py-6 bg-white flex justify-between z-[] md:px-44 md:py-10">
+      <div className="sticky w-full px-6 py-6 bg-white flex justify-between z-50 md:px-44 md:py-10">
         <span>
           <svg
             className="w-auto h-[1.75rem] translate-y-[0.25rem]"
@@ -106,19 +106,19 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      {/* <div
-        className={`absolute w-screen h-full inset-y-0 right-0 bg-[#029e8e] z-50 transform transition-all ease-in-out ${
+      <div
+        className={`absolute top-0 w-full h-max bg-[#029e8e] z-50 ${
           menuOpen ? "-translate-y-0" : "-translate-y-full"
-        } z-50`}
+        } transform transition-all duration-300 ease-in-out`}
       >
-        <div className="relative h-full px-6 text-white font-bold md:px-44">
-          <div className="flex justify-between items-center border-b-2 border-white md:h-24">
+        <div className="h-full px-6 text-white font-bold md:px-44">
+          <div className="relative flex justify-between items-center border-b-2 border-white md:h-24">
             <h4 className="mt-24 mb-6 text-2xl font-travels font-extrabold tracking-wider md:mt-0 md:mb-0">
               The Digitalesque Website Menu
             </h4>
 
             <button
-              className="flex items-center gap-2 text-white font-semibold md:top-0 hover:text-blue-300"
+              className="absolute top-4 right-0 flex items-center gap-2 text-white font-semibold md:top-0 hover:text-blue-300 md:relative"
               tabIndex={0}
               onClick={closeMenu}
             >
@@ -215,7 +215,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
