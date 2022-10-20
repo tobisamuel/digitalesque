@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div className="relative">
-      <div className="sticky w-full px-6 py-6 bg-white flex justify-between z-50 md:px-44 md:py-10">
+      <div className="fixed w-full px-6 py-6 bg-white flex justify-between z-50 md:px-44 md:py-10">
         <span>
           <svg
             className="w-auto h-[1.75rem] translate-y-[0.25rem]"
